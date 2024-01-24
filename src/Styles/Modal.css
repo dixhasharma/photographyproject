@@ -1,0 +1,76 @@
+.modal-backdrop{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    top:0px;
+    left: 0px;
+    position: fixed;
+    z-index: 3;
+}
+.modal-card{
+    width: 50%;
+    height: 50%;
+    background-color: #fff;
+    top:50%;
+    left: 50%;
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+    transform: translate(-50%,-50%);
+    position: absolute;
+}
+.modal-image{
+    width: 60%;
+    min-width: 60%;
+    height: 100%;
+}
+.modal-image img{
+    width: 100%;
+    height: 100%;
+    z-index: 6;
+    object-fit: cover;
+}
+.modal-info{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px;
+}
+.modal-info img{
+    width: 70px;
+    height: 70px;
+}
+.downloadPhoto{
+    background-color: #5a6b5a;
+}
+@media screen and (max-width:768px){
+    .inputDiv_13rvm3u{display:none!important}
+    .navbar_1dm01cy{justify-content: space-evenly;}
+    .clickable-element{
+        display: flex;
+        justify-content: center;
+    }
+    .modal-card{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+    .modal-image{
+        width: 100%;
+        height: 50%;
+    }
+    .modal-info img{
+        width: 60px;
+        height: 60px;
+    }
+    .coverSearchBox{
+        width: 100%!important;
+    }
+    .cover-content{
+        top:30%!important;
+        left: 50%;
+        width: 90%;
+        transform: translate(-50%,-50%);
+    }
+}
